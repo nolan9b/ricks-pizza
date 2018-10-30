@@ -1,3 +1,9 @@
+/*
+	Rick's Pizza Css
+	Created by Nolan Bisschoff
+	29 October 2018
+	Some of the styles from the Tech Academy's "Academy Pizza" css file were used as a baseline
+*/
 .jumbotron {
     background-color: #0000ff !important; 
 	color: #fff;
@@ -7,7 +13,6 @@
 	background-image: url('../img/pizza.jpg') ;
 	background-size: cover;
 }
-
 
 #form_menu {
 	margin: 0% auto;
@@ -72,7 +77,7 @@
 #order_placed {
 	opacity: 0;
 	margin: 15px auto;
-	width: 550px;
+	width: 650px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -103,7 +108,7 @@
 	text-shadow: 1.5px 1.5px 5px #00f, 1px 1px 5px #000;
 }
 
-#showText1 {
+#items {
 	font-size: 13px;
 	flex: 1 250px;
 	padding: 1px 0 10px 10px;
@@ -111,7 +116,7 @@
 	border-radius: 0 0 0 0;
 }
 
-#showText2 {
+#prices {
 	font-size: 13px;
 	flex: 1 250px;
 	padding: 1px 0 10px 10px;
@@ -119,21 +124,18 @@
 	border-radius: 0 0 0 0;
 }
 
-#totalPrice1 {
+#total_price {
 	flex: 1 250px;
 	padding: 0 0 10px 10px;
 	width: 250px;
 	border-radius: 0 0 0 0;
 }
 
-#totalPrice2 {
+#total_price_amount {
 	flex: 1 250px;
 	font-weight: bold;
 	padding: 20px 0 10px 10px;
 	width: 250px;
 	border-radius: 0 0 0 0;
 }
-
-
-
 
