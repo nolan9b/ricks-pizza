@@ -1,0 +1,143 @@
+<!-- Rick's Pizza
+	 Created by Nolan Bisschoff
+	 29 October 2018
+-->
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="./css/style.css">
+	
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<title>Ricks Pizza</title>
+	</head>
+	
+	<body>
+		<!-- Start Container -->
+		<div class="container contain">
+		
+			<!-- End container -->
+			<!-- Start Navigation -->
+			<ul class="navi nav nav-pills nav-fill">
+				<li class="nav-item">
+					<a class="nav-link " href="#order">Place Order</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+			</ul>
+			<!-- End Navigation -->
+			<!-- Start Jumbotron -->
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">Rick's Pizza</h1>
+					<p class="lead">Please place your order by selecting a base size and toppings</p>
+				</div>
+			</div>
+			<!-- End Jumbotron -->
+
+			<!-- Start Main Layout -->
+			<div>
+				<!-- Start Form Layout -->
+				<form id="form_menu">
+					<div class="menu">
+						<h3>Size</h3>
+						<input class="size" type="radio" name="pizza_size" value="personal_size"> Personal Pizza<br>
+						<input class="size" type="radio" name="pizza_size" value="medium_size"> Medium Pizza<br>
+						<input class="size" type="radio" name="pizza_size" value="large_size" checked> Large Pizza<br>
+						<input class="size" type="radio" name="pizza_size" value="xl_size"> Extra Large Pizza<br>
+					</div>
+					<div class="menu">
+					<h3>Meat</h3>
+						<input class="meat" type="checkbox" name="meat_selection" value="pepperoni"> Pepperoni<br>
+						<input class="meat" type="checkbox" name="meat_selection" value="sausage"> Sausage<br>
+						<input class="meat" type="checkbox" name="meat_selection" value="bacon" > Canadian Bacon<br>
+						<input class="meat" type="checkbox" name="meat_selection" value="beef"> Ground Beef<br>
+						<input class="meat" type="checkbox" name="meat_selection" value="anchovy"> Anchovy<br>
+						<input class="meat" type="checkbox" name="meat_selection" value="chicken"> Chicken<br>
+					</div>
+					<div class="menu">
+					<h3>Veg</h3>
+						<input class="veg" type="checkbox" name="veg_selection" value="tomoatoes"> Tomoatoes<br>
+						<input class="veg" type="checkbox" name="veg_selection" value="onions"> Onions<br>
+						<input class="veg" type="checkbox" name="veg_selection" value="olives" > Olives<br>
+						<input class="veg" type="checkbox" name="veg_selection" value="green_peppers"> Green Peppers<br>
+						<input class="veg" type="checkbox" name="veg_selection" value="mushrooms"> Mushrooms<br>
+						<input class="veg" type="checkbox" name="veg_selection" value="pineapples"> Pineapple<br>
+						<input class="veg" type="checkbox" name="veg_selection" value="spinach"> Spinach<br>
+						<input class="veg" type="checkbox" name="veg_selection" value="jalapeno"> Jalapeno<br>
+					</div>
+					<div class="menu">
+						<h3>Cheese</h3>
+						<input class="cheese" type="radio" name="cheese_selection" value="regular_cheese" checked> Regular Cheese<br>
+						<input class="cheese" type="radio" name="cheese_selection" value="no_cheese"> No Cheese<br>
+						<input class="cheese" type="radio" name="cheese_selection" value="extra_cheese"> Extra Cheese<br>
+					</div>
+					<div class="menu">
+						<h3>Crust</h3>
+						<input class="crust" type="radio" name="pizza_crust" value="plain_crust" checked> Plain Crust<br>
+						<input class="crust" type="radio" name="pizza_crust" value="garlic_crust"> Garlic Butter Crust<br>
+						<input class="crust" type="radio" name="pizza_crust" value="cheese_crust" > Cheese Stuffed Crust<br>
+						<input class="crust" type="radio" name="pizza_crust" value="spicy_crust"> Spicy Crust<br>
+						<input class="crust" type="radio" name="pizza_crust" value="house_crust"> House Special Crust<br>
+					</div>
+					<div class="menu">
+						<h3>Sauce</h3>
+						<input class="sauce" type="radio" name="pizza_sauce" value="marinara_sauce" checked> Marinara<br>
+						<input class="sauce" type="radio" name="pizza_sauce" value="white_sauce"> White Sauce<br>
+						<input class="sauce" type="radio" name="pizza_sauce" value="bbq_sauce" > Barbeque<br>
+						<input class="sauce" type="radio" name="pizza_sauce" value="no_sauce"> No Sauce<br>
+					</div>					
+				</form><br>
+				<!-- End Form Layout -->
+				
+				<!-- Start Buttons -->
+				<div class="controls">
+					<div class="button" onclick="placeOrder()">
+						<p>Place Order</p>
+					</div>
+					<div class="button" onclick="roll()">
+						<p>Roll pizza..</p>
+					</div>
+					<div class="button" onclick="clearForm()">
+						<p>Cancel</p>
+					</div>
+				</div>
+				<!-- End Buttons -->
+				
+				<!-- Place Order Menu -->
+				<div id="order_placed">
+					<div id="receipt_title"><h3>Pizza Order</h3></div>
+					<div id="price_title"><h3>Subtotal</h3></div>
+					<div id="showText1"></div>
+					<div id="showText2"></div>
+					<div id="totalPrice1"><h3>Total Price:</h3></div>
+					<div id="totalPrice2"></div>				
+				</div>
+				<!-- End Place Order Menu -->
+				
+			</div>
+			<!-- End Main Layout -->
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		
+		<!-- Custom JavaScript-->
+		<script src="../js/javascript.js"></script>
+		
+		
+	</body>
+</html>

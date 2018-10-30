@@ -1,0 +1,139 @@
+.jumbotron {
+    background-color: #0000ff !important; 
+	color: #fff;
+}
+
+.contain {
+	background-image: url('../img/pizza.jpg') ;
+	background-size: cover;
+}
+
+
+#form_menu {
+	margin: 0% auto;
+	width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	border-radius: 25px;
+}
+
+.menu { 
+	flex: 1 150px;
+	min-width: 0;
+	border: 2px solid #080054;
+	padding: 0 0 10px 0;
+	background-color: rgba(244, 245, 247, 0.9);
+}
+
+
+.menu H3 {
+	color: #fff;
+	padding: 0 0 0 60px;
+	margin: 0 auto;
+	background-color: #0000ff;
+	text-shadow: 1.5px 1.5px 5px #00f, 1px 1px 5px #000;
+	font-size: 24px;
+}
+
+.button {
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	margin: 2% auto;
+	padding: .2px 0 .1px 0px;
+    font: 18px sans-serif;
+	background-color: #0000ff;
+	box-shadow: 0 0 0 2px rgba(255,255,255, .8);
+	transition-property: transform background, box-shadow, color;
+	transition-duration: .3s, .5s, .2s;
+	transition-timing-function: eas-in-out;
+}
+
+.button p {
+	text-align: center;
+	font-weight: bold;
+	padding-top: 10px;
+	
+}
+
+.button:hover {
+	font: 18px sans-serif;
+	font-weight: bold;
+	color: #000;
+	background-color: #fff;
+	box-shadow: 0 0 0 2px #080054;
+}
+
+#order_placed {
+	opacity: 0;
+	margin: 15px auto;
+	width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	background-color: rgba(244, 245, 247, 0.9);
+	border: 2px solid #080054;
+	box-shadow: 0 0 0 3px rgba(255,255,255, .8);
+}
+
+#receipt_title {
+	color: #fff;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: #0000ff;
+	text-shadow: 1.5px 1.5px 5px #00f, 1px 1px 5px #000;
+}
+
+#price_title {
+	color: #fff;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: #0000ff;
+	text-shadow: 1.5px 1.5px 5px #00f, 1px 1px 5px #000;
+}
+
+#showText1 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#showText2 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice1 {
+	flex: 1 250px;
+	padding: 0 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice2 {
+	flex: 1 250px;
+	font-weight: bold;
+	padding: 20px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+
+
+
